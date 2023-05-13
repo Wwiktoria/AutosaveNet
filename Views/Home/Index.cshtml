@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/template/color/style_user_car.css")" />
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#a">
+                    <img id="LogoAI" src="~/Content/template/color/Images/logo_car.png" alt="Logo" />
+                </a>
+            </div>
+            <div id="AIart">Autosave</div>
+            <ul>
+                <li><a class="sekcja" href="#b">Go Back</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="leftmenu">
+            <div id="side-contain" class="side-menu-container">
+                <nav id="side" class="side-menu">
+                    <a onclick="diabetesHandler()">
+                        <img class="side-menu-image"
+                             src="~/Content/template/color/Images/Diabetes.png"
+                             alt="Side Menu Diabetes" />
+                    </a>
+                    <a onclick="collisionHandler()">
+                        <img class="side-menu-image"
+                             src="~/Content/template/color/Images/Collision.png"
+                             alt="Side menu collision" />
+                    </a>
+                    <a onclick="breakInHandler()">
+                        <img class="side-menu-image"
+                             src="~/Content/template/color/Images/Car-break-in1.png"
+                             alt="Side Menu car theft" />
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="content_container">
+            <div id="context">
+                <div class="car-container">
+                    <img src="~/Content/template/color/Images/Car_Model.png" id="car-off" />
+                    <img src="~/Content/template/color/Images/Car_Model_LightsOn.png" id="car-lights-on" />
+                    <img src="~/Content/template/color/Images/Car_Model_AllOn.png" id="car-all-on" />
+                </div>
+                <div class="text_in_context">
+                    <table style="font-size: 17px; position: center">
+                        <tr>
+                            <th>Functionality Button</th>
+                            <th>Current State</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="func-btn" id="lights" onclick="changeLights()">
+                                    Lights
+                                </button>
+                            </td>
+                            <td><p id="lights-text">Off</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="func-btn" id="block" onclick="changeLocked()">
+                                    Block
+                                </button>
+                            </td>
+                            <td><p id="block-text">Locked</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="func-btn" id="alarm" onclick="changeAlarm()">
+                                    Alarm
+                                </button>
+                            </td>
+                            <td><p id="alarm-text">Off</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="func-btn"
+                                        id="emergency"
+                                        onclick="changeEmergency()">
+                                    Emergency
+                                </button>
+                            </td>
+                            <td><p id="emergency-text">Off</p></td>
+                        </tr>
+                    </table>
+                    <br />
+                    <p style="text-align: justify">
+                        Here is the functionality table, which allows control for basic
+                        functions of the car. On the side you have built-in situation
+                        buttons, which you may activate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/JS/user_car_js.js"></script>
+</main>

@@ -1,0 +1,251 @@
+*{
+    scroll-behavior: smooth;
+  }
+body{
+    padding:0;
+    margin:0;
+    font-family: "Audiowide", sans-serif;
+    background-color: #211036;
+    background-image: url("../color/Images/background.png");
+    /* background-attachment: flex; */
+    background-size: 100vw 100vh;
+    background-repeat: repeat;
+}   
+
+header{
+    position: fixed;
+}
+
+#LogoAI {
+    height: 4vh;
+  }
+
+
+.container{
+    margin: none;
+    float: left;
+}
+
+.car-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#car-off{
+    width: 70%;
+    height: auto;
+    display:inline;
+}
+
+#car-lights-on{
+    width: 70%;
+    height: auto;
+    display: none;
+}
+
+#car-all-on{
+    width: 70%;
+    height: auto;
+    display: none;
+}
+
+/* logo and page name */
+.logo {
+    margin-left: 2vw;
+    width: fit-content ;
+}
+
+#AIart {
+color: hotpink;
+    margin-left: 2vw;
+    width: fit-content;
+    font-size: xx-large;
+
+}
+
+.navbar{
+    padding: 10px;
+    width: 100vw;
+    height: 4vh;
+    color: aliceblue;
+    margin: none;
+    display: flex;
+    background-color: rgb(39, 34, 114);
+    transition: top 0.3s ease;
+}
+
+/* unvisited link */
+a:link {
+    color: aliceblue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: aliceblue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 3vw;
+}
+
+.sekcja{
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration:none;
+}
+
+.sekcjaico{
+    padding-top: 1.5vh;
+    padding-bottom: 2vh;
+    padding: 1vw;
+    border-radius: 12px;
+    border: none;
+    font-size: xx-large;
+    text-decoration:none;
+}
+
+.leftmenu{
+    /* background-color:red; */
+    width: 1.5625vw;
+    height: 100%;
+    float: left; /* Add this line */
+    transition: left 0.3s ease;
+}
+
+
+
+.side-menu-container,
+      .side-menu,
+      .side-menu > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+      }
+      .side-menu-container {
+        position: fixed;
+        height: 100vh;
+        left: 0px;
+
+      }
+      .side-menu > a {
+        margin: 5px 0px;
+        height: 40px;
+        background-color: hotpink;
+      }
+      .side-menu > a:hover {
+        margin: 5px 0px;
+        height: 40px;
+        color: #fff;
+        background-color: magenta;
+      }
+
+      .side-menu-image {
+        object-fit: scale-down;
+        width: 100%;
+        height: 100%;
+      }
+
+
+#content_container{
+    width: calc(100%-1.5625vw);
+    margin-left: 1.5625vw;
+    height: 98.5%;
+    margin-top: 5.8vh;
+}
+
+#footer{
+    background-color: aliceblue;
+    text-align: center;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+table, th, td {
+    border:3px solid white;
+    border-collapse: collapse;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text_in_context{
+    padding-top: 10%;
+    width: 100%;
+    height: 80%;
+    margin:auto;
+    font-size: x-large;
+    color: aliceblue;
+}
+
+.func-btn {
+    background-color: hotpink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-large;
+    border-radius: 5px;
+  }
+
+  .func-btn:hover {
+    background-color: red; 
+  }
+
+#context{
+
+    width: 40%;
+    float: left;
+    height: 100%;
+    margin-left: 27vw;
+}
+
+
+@media (min-width: 700px){
+    .sekcjaico{
+        display: none;
+    }
+}
+/* middle width */
+@media (max-width: 850px){
+}
+
+@media(max-width: 1400px){
+    #context{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}
+
+/* smallest width */
+@media (max-width:700px){
+        
+}

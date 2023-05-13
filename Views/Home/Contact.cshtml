@@ -1,0 +1,220 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autosave Home Page</title>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/template/color/style.css")" />
+    <script src="~/Scripts/JS/kod.js"></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Audiowide" />
+    <link rel="shortcut icon" href="./Styles/logo.png" />
+    <script src="https://kit.fontawesome.com/73146b34cb.js"
+            crossorigin="anonymous"></script>
+    
+</head>
+
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#a">
+                    <img id="LogoAI" src="~/Content/template/color/Images/logo_text.png" alt="Logo" />
+                </a>
+            </div>
+            <div id="AIart">Autosave</div>
+            <ul>
+                <li><a class="sekcja" href="#b">Start</a></li>
+                <li><a class="sekcja" href="#c">Information</a></li>
+                <li><a class="sekcja" href="#d">Contact</a></li>
+                <li>
+                    <a class="sekcjaico" href="#b"><i class="fa-solid fa-1"></i></a>
+                </li>
+                <li>
+                    <a class="sekcjaico" href="#c"><i class="fa-solid fa-2"></i></a>
+                </li>
+                <li>
+                    <a class="sekcjaico" href="#d"><i class="fa-solid fa-3"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <button onclick="scrollToBottom()" class="scroll-to-top">Up</button>
+    <div class="container">
+        <div class="leftmenu">
+            <div class="side-menu-container">
+                <nav class="side-menu">
+                    <a class="toSec1" href="#a">
+                        <div><i class="fa fa-home"></i></div>
+                    </a>
+                    <a class="toSec2" href="#b">
+                        <div><i class="fa-solid fa-1"></i></div>
+                    </a>
+                    <a class="toSec3" href="#c">
+                        <div><i class="fa-solid fa-2"></i></div>
+                    </a>
+                    <a class="toSec4" href="#d">
+                        <div><i class="fa-solid fa-3"></i></div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="content_container">
+            <div class="outer" id="a">
+                <div class="inner">
+                    <div class="logo_in_context">
+                        <img src="~/Content/template/color/Images/logo_text.png"
+                             alt="Logo"
+                             style="object-fit: contain"
+                             class="logo_in_context_reactive" />
+                    </div>
+                    <div>
+                        <button class="profile-btn">Log In</button>
+                        <br />
+                        <br />
+                        <button class="profile-btn">Sign In</button>
+                    </div>
+                    <div class="logo_in_context">
+                        <a href="#b">
+                            <img src="~/Content/template/color/Images/Arrow.png" height="200" alt="Arrow" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="context">
+                <div class="part_of_context" id="b">
+                    <div class="text_in_context">
+                        <h1>Take care of your car. Start your own journey.</h1>
+                        <p style="font-size: 20px; font-weight: lighter">
+                            Autosave is a built-in application for online management of your
+                            car. It is available as web application, and in future we are
+                            considering deploying an android app for smartphones. Currently
+                            Autosave allows for quick management of basic functions in your
+                            car.
+                            <br />
+                            <br />
+                            Firstly, you are required to log in or sign in. Your created
+                            account will be directly linked to your car via VIN and license
+                            plate - be sure to get it right! Autosave will connect to your
+                            car's operating system.
+                            <br />
+                            <br />
+                            You can manage your car's basic functions as well as use
+                            built-in situational behaviours.
+                        </p>
+                        <br />
+                        <div>
+                            <img src="~/Content/template/color/Images/SpeedUp.png" class="image1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="part_of_context" id="c">
+                    <div class="text_in_context">
+                        <p style="font-size: 24px; font-weight: normal">
+                            Built-in situational behaviours are the most important part of
+                            Autosave. We plan on expanding this idea and add customization,
+                            but right now there are three situations programmed into
+                            Autosave.
+                            <br />
+                            <br />
+                        </p>
+                        <ol style="font-size: 17px; font-weight: lighter">
+                            <li>
+                                Car Theft - Report the theft and car will slowly stop, open
+                                all the doors, start alarm and send you the current position.
+                                You can forward the position to proper authorities or go
+                                retieve the car on your own.
+                                <br />
+                                <br />
+                            </li>
+
+                            <li>
+                                Collision - Happened to be in a collison? Press one button and
+                                the contacts on your emergency list will be notified that you
+                                may require help. Your localiztion will be forwarded to them.
+                                <br />
+                                <br />
+                            </li>
+
+                            <li>
+                                Diabetes - Connect your glucometer's API to Autosave and drive
+                                in peace knowing Autosave has your back. In case of dangerous
+                                sugar levels Autosave will activate yellow alarm - it will
+                                give you 5 minutes to act on your own to stabilize the sugar
+                                level. If you won't react Autosave will enter into Diabetes
+                                Mode - it will slow down the car, open the doors and send
+                                message to your emergency contacts. Amazing, isn't it?
+                                <br />
+                                <br />
+                            </li>
+                        </ol>
+                        <div>
+                            <img src="~/Content/template/color/Images/Situations.png" class="image1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="part_of_context" id="d">
+                    <div class="text_in_context">
+                        <p>Here are the creators of Autosave WEB EDITION.</p>
+                        <br />
+                        <table style="font-size: 17px">
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Github</th>
+                            </tr>
+                            <tr>
+                                <td>Wiktoria Sordyl</td>
+                                <td>https://github.com/Wwiktoria</td>
+                            </tr>
+                            <tr>
+                                <td>Wiktoria Arendarczyk</td>
+                                <td>https://github.com/MagicWiqqu</td>
+                            </tr>
+                        </table>
+                        <br />
+                        <p>Keep in mind this is a demo.</p>
+                        <br />
+                        <p>
+                            It was developed basing on our Hackathon C# WPF application, for
+                            more information click
+                        </p>
+                        <a href="https://github.com/Wwiktoria/HackAGH">H E R E</a>
+                        <div>
+                            <img src="~/Content/template/color/Images/Github.png" class="image1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        Wiktoria Sordyl, Wiktoria Arendarczyk 2023 &copy;
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).on("resize scroll", function () {
+                var windowWidth = $(window).width();
+                var scrollTop = $(window).scrollTop();
+                if (windowWidth < 600) {
+                    $(".leftmenu").removeClass("show");
+                    $(".navbar").removeClass("hide");
+                } else {
+                    if (scrollTop > 0) {
+                        $(".leftmenu").addClass("show");
+                        $(".navbar").addClass("hide");
+                    } else {
+                        $(".leftmenu").removeClass("show");
+                        $(".navbar").removeClass("hide");
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
