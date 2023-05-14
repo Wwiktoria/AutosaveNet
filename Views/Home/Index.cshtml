@@ -2,18 +2,37 @@
     ViewBag.Title = "Home Page";
 }
 
-<main>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Autosave Car</title>
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/template/color/style_user_car.css")" />
+    <script src="./JS/user_car_js.js"></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Audiowide" />
+    <link rel="shortcut icon" href="./Styles/logo.png" />
+    <script src="~/Scripts/JS/user_car_js.js"></script>
+
+</head>
+
+<body>
     <header>
         <div class="navbar">
             <div class="logo">
                 <a href="#a">
-                    <img id="LogoAI" src="~/Content/template/color/Images/logo_car.png" alt="Logo" />
+                    <img id="LogoAI" src="~/Content/template/color/Images/logo_text.png" alt="Logo" />
                 </a>
             </div>
             <div id="AIart">Autosave</div>
             <ul>
-                <li><a class="sekcja" href="#b">Go Back</a></li>
+                <li>@Html.ActionLink("Functions", "Index", "Home", new { area = "" }, new { @class = "sekcja" })</li>
+                <li>@Html.ActionLink("More", "Contact", new { area = "" }, new { @class = "sekcja" })</li>
+
             </ul>
         </div>
     </header>
@@ -97,5 +116,10 @@
             </div>
         </div>
     </div>
-    <script src="~/Scripts/JS/user_car_js.js"></script>
-</main>
+    <footer id="footer">
+        Wiktoria Sordyl, Wiktoria Arendarczyk 2023 &copy;
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script></script>
+</body>
+</html>
